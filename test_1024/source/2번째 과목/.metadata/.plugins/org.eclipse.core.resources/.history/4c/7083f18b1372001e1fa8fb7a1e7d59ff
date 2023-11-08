@@ -1,0 +1,10 @@
+package test02;
+
+public class Test03 {
+	public static void main(String[] args) {
+		char a = 'a';
+		int a1 = (int)a;
+		
+		System.out.println(a1);
+	}
+}

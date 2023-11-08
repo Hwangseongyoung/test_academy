@@ -1,0 +1,5 @@
+INDEX VERSION 1.134+C:\Users\ITPS\Desktop\test\source\3번째 과목\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+479335008.index
+2241545178.index
+4070339404.index

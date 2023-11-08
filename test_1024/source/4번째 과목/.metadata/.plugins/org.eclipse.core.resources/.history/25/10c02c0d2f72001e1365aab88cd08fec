@@ -1,0 +1,44 @@
+package test01;
+
+import java.sql.*;
+
+public class InsertEx {
+	public void insert () {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			
+			String url = "jdbc:mysql://127.0.0.1:3306/kordb";
+			String id = "kordb";
+			String pwd = "0000";
+			
+			conn = DriverManager.getConnection(url, id, pwd);
+			
+			String sql = "insert into kordb_member values( 황성영 , 123456, now(), 남자, 안녕하십니까);";
+			pstmt = conn.prepareStatement(sql);
+			
+//			pstmt.setString(1, "황성영");
+//			pstmt.setString(2, "123456");
+//			pstmt.setString(3, "남자");
+//			pstmt.setString(4, "안녕하십니까.");
+			
+			int row = pstmt.executeUpdate();
+			
+			if(row>0) {
+				System.out.println("등록완료");
+			}else {
+				System.out.println("등록실패");
+			}
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		InsertEx ist = new InsertEx();
+		ist.insert();
+	}
+}

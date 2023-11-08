@@ -1,0 +1,27 @@
+package test02;
+
+public class Test02_1 {
+	public static void main(String[] args) {
+		for(int i=0;i<350;i++) {
+			int tr[] = new int[i];
+			if(tr[i]>1000) {
+				break;
+			} else {
+				tr[i] = 3*(i+1);
+			}
+			
+			for(int j=0;j<200;j++) {
+				int fv[] = new int[j];
+				if(fv[j]<1000) {
+					break;
+				} else {
+					fv[j] = 5*(j+1);
+				}
+				for(int k=0;k<fv.length;k++) {
+					System.out.println(fv[k]);
+				}
+			}
+		}
+		
+	}
+}

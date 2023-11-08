@@ -1,0 +1,9 @@
+create table kordb_member (
+	mem_id int not null auto_increment,
+	mem_name varchar(20) not null,
+	mem_passwd varchar(20) not null,
+	mem_startDate date,
+	mem_gender varchar(10),
+	mem_intro text,
+	primary key(mem_id)
+);

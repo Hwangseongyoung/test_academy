@@ -1,0 +1,43 @@
+package test01;
+
+public class Test01 {
+	public static void main(String[] args) {
+		int length = 333;
+		int tr[] = new int[length];
+		int fv[] = new int[length];
+		
+//		for(int i=0;i<length;i++) {
+//			do {
+//				tr[i] = 3*(i+1);
+//			} while(tr[i]>1000);
+//		}
+		
+		for(int i=0;i<length;i++) {
+			do {
+				fv[i] = 5*(i+1);
+				i++;
+			} while(fv[i]>1001);
+		}
+		
+		
+		
+		for(int k=0;k<fv.length;k++) {
+			System.out.println(fv[k]);
+		}
+			
+			
+//			for(int j=0;j<200;j++) {
+//				int fv[] = new int[j];
+//				if(fv[j]<1000) {
+//					break;
+//				} else {
+//					fv[j] = 5*(j+1);
+//				}
+//				for(int k=0;k<fv.length;k++) {
+//					System.out.println(fv[k]);
+//				}
+//			}
+		
+		
+	}
+}
