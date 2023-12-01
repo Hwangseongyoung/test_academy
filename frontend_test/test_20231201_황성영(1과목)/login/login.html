@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>로그인 페이지</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <h1 class="logo">
+      <a href="#">
+        <img src="./images/logo.png" alt="로고이미지"/>
+      </a>
+    </h1>
+    <h3>KIT MANAGEMENT SYSTEM</h3>
+    <form class="login" onsubmit="return checkfrm()">
+      <ul>
+        <li>
+          <label>Email.</label>
+          <input type="email" class="user_email"/>
+        </li>
+        <li>
+          <label>Password.</label>
+          <input type="password" class="user_passwd"/>
+        </li>
+        <li>
+          <input type="submit" value="LOGIN" class="btn_login"/>
+        </li>
+      </ul>
+    </form>
+    <a href="../register/register.html" class="movepage">
+      Would you like to register?
+    </a>
+  </div>
+  
+  <script src="./js/login_exception.js"></script>
+</body>
+</html>
